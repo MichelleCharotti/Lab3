@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/estilo.css">
+    <script src="./js/funcion.js"></script>
+</head>
+
+<body>
+    <div class="spinner" id="idSpinner" hidden>
+        <img src="./img/Spinner-1s-200px.gif" alt="spinner" id="imgSpinner" class="imagen">
+    </div>
+    <header id="idContenedor" hidden> 
+        <div>
+            <input type="button" value="X" class="boton" id="btnCerrar">
+        </div>
+        <nav id="cuadro" class="cuadroC">
+            <label for="fname">Nombre</label>
+            <input type="text" class="SinError" id="fname" name="firstname">
+            <label for="flname">Apellido</label>
+            <input type="text" class="SinError" id="lname" name="lastname">
+            <label for="fecha">Fecha nacimiento</label>
+            <input type="date" class="SinError" id="fecha"> <br>
+            <label for="sexo">Sexo</label>
+            <div class="radio">
+                <input type="radio" name="gender" value="femenino" id="femenino">
+                <label for="femenino">Femenino</label><br>
+                <input type="radio" name="gender" value="masculino" id="masculino">
+                <label for="masculino">Masculino</label>
+            </div>
+            <input type="button" value="Eliminar" class="boton" id="btnEliminar">
+            <input type="button" value="Modificar" class="boton" id="btnModificar">
+        </nav>
+    </header>
+    <main>
+        <section>
+            <table id="tabla">
+                <h2>Lista de personas</h2>
+                <thead>
+
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Fecha</th>
+                        <th>Sexo</th>
+                    </tr>
+                </thead>
+                <tbody id="tCuerpo">
+                </tbody>
+            </table>
+
+        </section>
+    </main>
+    <footer>
+    </footer>
+</body>
+
+</html>
